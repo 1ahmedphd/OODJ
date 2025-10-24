@@ -4,7 +4,9 @@
  */
 package oodj;
 
-/**
+import java.util.List;
+
+/*
  *
  * @author ak324
  */
@@ -14,7 +16,6 @@ public class OODJ {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // current
     }
     
 }
