@@ -10,3 +10,28 @@ public class Course {
     public String getCourseName () {return courseName ; }
     public int getcredit () {return credit ; }
 }
+
+// SARUF'S TEMPLATE (!!HELP!!: ONLY TAKE FROM THIS WHAT IS USEABLE IF ANY, THEN DELETE THE REST)
+
+/*public class Course {
+    private String courseCode;
+    private String courseTitle;
+    private int creditHours;
+
+    // Constructor
+    public Course(String courseCode, String courseTitle, int creditHours) {
+        this.courseCode = courseCode;
+        this.courseTitle = courseTitle;
+        this.creditHours = creditHours;
+    }
+
+    // Getters and setters
+    public String getCourseCode() { return courseCode; }
+    public String getCourseTitle() { return courseTitle; }
+    public int getCreditHours() { return creditHours; }
+
+    @Override
+    public String toString() {
+        return courseCode + " - " + courseTitle + " (" + creditHours + " credits)";
+    }
+}*/

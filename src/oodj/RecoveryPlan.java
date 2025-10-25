@@ -49,6 +49,33 @@ public class RecoveryPlan {
     {
         return taskStatus ; 
     }
+    //public RecoveryPlan ( String planID,List<LocalDate> taskDates ,List<String> taskList ,List<String> taskRecommendation, List<String> taskGrade,List<String> taskStatus ) {}
+    public void Recoveryplan () 
+    {
 
+    }
+
+    // Note that the tasks for each Recovery plan will be based on the failed component 
+    // Given The data there are 20 Unique Coruse : which are : 
+        /* [1] "Algorithms"             
+    [2] "Artificial Intelligence"
+    [3] "Biology"                
+    [4] "Chemistry"              
+    [5] "Operating Systems"      
+    [6] "English Composition"    
+    [7] "Literature"             
+    [8] "Software Engineering"   
+    [9] "Database Systems"       
+    [10] "Data Structures"        
+    [11] "Cybersecurity"          
+    [12] "Philosophy"             
+    [13] "Machine Learning"       
+    [14] "Computer Science"       
+    [15] "Mathematics"            
+    [16] "History"                
+    [17] "Physics"                
+    [18] "Economics"              
+    [19] "Networking"             
+    [20] "Statistics" */
 }
 

@@ -47,3 +47,33 @@ public class CourseGrade {
             return "F-";
     }
 }
+
+// SARUF'S TEMPLATE (!!HELP!!: ONLY TAKE FROM THIS WHAT IS USEABLE IF ANY, THEN DELETE THE REST)
+
+/*public class CourseGrade {
+    private Course course;
+    private double grade;      // 0.0 to 4.0 scale
+    private String status;     // "Passed" / "Failed"
+
+    public CourseGrade(Course course, double grade) {
+        this.course = course;
+        this.grade = grade;
+        this.status = (grade >= 2.0) ? "Passed" : "Failed";
+    }
+
+    public boolean isPassed() { return grade >= 2.0; }
+
+    public double getGradePoint() {
+        return grade * course.getCreditHours();
+    }
+
+    public Course getCourse() { return course; }
+    public double getGrade() { return grade; }
+    public String getStatus() { return status; }
+
+    @Override
+    public String toString() {
+        return course.getCourseCode() + " - " + course.getCourseTitle() +
+               ": " + grade + " (" + status + ")";
+    }
+}*/
