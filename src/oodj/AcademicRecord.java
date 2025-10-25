@@ -1,6 +1,8 @@
 package oodj;
-
+import java.util.List;
+import java.util.ArrayList;
 // SARUF: this will act as a template for now, changes can be made accordingly as we progress.
+// Ahmed: Fixed ur imports coz errors look annoying af but u do ur own thing here i guess
 
 public class AcademicRecord {
     private String recordID;
