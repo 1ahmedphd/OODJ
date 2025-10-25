@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="OODJ" default="default" basedir=".">
+<project name="OODJ" default="run" basedir=".">
     <description>Builds, tests, and runs the project OODJ.</description>
-    <import file="nbproject/build-impl.xml"/>
 
+    <!-- Directories -->
     <property name="build.dir" location="build"/>
     <property name="src.dir" location="src"/>
     <property name="lib.dir" location="lib"/>
 
+    <!-- Classpath for external JARs -->
     <path id="project.class.path">
         <fileset dir="${lib.dir}">
             <include name="**/*.jar"/>
         </fileset>
     </path>
 
+    <!-- Clean previous build -->
     <target name="clean" description="Cleans the build directory">
         <delete dir="${build.dir}"/>
     </target>
 
-    <target name="compile" description="Compiles the source code">
+    <!-- Compile source files -->
+    <target name="compile" description="Compiles the source code" depends="clean">
         <mkdir dir="${build.dir}"/>
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="project.class.path" includeantruntime="false"/>
     </target>
 
+    <!-- Run the program -->
     <target name="run" description="Runs the application" depends="compile">
-        <java classname="com.example.Main" fork="true" classpath="${build.dir};${lib.dir}/*"/>
+        <java classname="oodj.OODJ" fork="true">
+            <classpath>
+                <path refid="project.class.path"/>
+                <pathelement location="${build.dir}"/>
+            </classpath>
+        </java>
     </target>
-
 </project>
