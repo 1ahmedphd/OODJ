@@ -63,6 +63,14 @@ public class RecoveryPlanMetadata {
     public void setPlanStatus(PlanStatus planStatus) {
         this.planStatus = planStatus;
     }
+    public LocalDate getCreatDate () 
+    {
+        return createdDate ; 
+    }
+    public void setCreateDate (LocalDate createdDate ) 
+    {
+        this.createdDate = createdDate ; 
+    }
     
 }
 
