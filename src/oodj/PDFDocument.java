@@ -84,7 +84,7 @@ public class PDFDocument {
 
 
 
-    public void ToDocument(String content, String filename, String Table , String Progress) {
+    public void ToDocument(String Table , String Progress) {
         // combines all html parts into a single html document and converts to pdf using itext
        String fullHtml = "<html><head><title></title></head><body>"
                     + content + "\n" + Table + "\n" + Progress
